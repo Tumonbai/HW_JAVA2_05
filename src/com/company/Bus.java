@@ -15,9 +15,9 @@ public class Bus extends Thread {
     @Override
     public void run() {
         try {
-            sleep(2000);
+            sleep(1000);
             System.out.println("Пассажир " + riderNumber + " " + " сел на автобус");
-            sleep(2000);
+            sleep(1000);
             System.out.println(" " + "Пассажиры отправляются в Ош....");
         } catch (Exception e) {
 

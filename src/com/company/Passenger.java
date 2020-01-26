@@ -18,10 +18,10 @@ public class Passenger extends Thread {
         try {
             sem.acquire();
             System.out.println("Пассажир " + id + " " + "обслуживается на кассе и приобрел свой билет");
-            sleep(2000);
+            sleep(1000);
             System.out.println("Пассажир " + id + " " + "выходит из кассы");
             sem.release();
-            sleep(2000);
+            sleep(1000);
         }
         catch (InterruptedException ie)
         {

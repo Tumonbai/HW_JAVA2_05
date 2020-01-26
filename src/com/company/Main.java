@@ -19,11 +19,11 @@ public class Main {
             LATCH = new CountDownLatch(PASSENGERS_COUNT + 1);
             Bus bus = new Bus(i);
             bus.start();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
 
             try {
                 while (LATCH.getCount() > 100) {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 }
             }
             catch (NullPointerException ex)
